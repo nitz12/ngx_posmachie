@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:ngx_posmachine/screens/loginpage.dart';
 import 'package:ngx_posmachine/screens/token.dart';
+import 'package:ngx_posmachine/screens/receipt.dart';
+import 'package:ngx_posmachine/screens/retail.dart';
+import 'package:ngx_posmachine/screens/balance.dart';
 
 class Homepage extends StatelessWidget {
   @override
@@ -104,7 +107,7 @@ class Homepage extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => Homepage()),
+                                  builder: (context) => Receipt()),
                             );
                           },
                           child: Center(child: const Text('RECEIPT')),
@@ -191,7 +194,7 @@ class Homepage extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => Homepage()),
+                                  builder: (context) => Balance()),
                             );
                           },
                           child: Center(
@@ -237,7 +240,7 @@ class Homepage extends StatelessWidget {
                         onPressed: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => Homepage()),
+                            MaterialPageRoute(builder: (context) => Retail()),
                           );
                         },
                         child: Center(
